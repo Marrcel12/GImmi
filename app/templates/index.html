@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Streaming</title>
+    <!-- Include Socket.IO from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Audio Streaming</h1>
+        <div class="controls">
+            <label for="audioSourceSelect">Select Audio Source:</label>
+            <select id="audioSourceSelect">
+                <option value="mic">Microphone</option>
+                <option value="system">System Audio</option>
+                <option value="both">Both</option>
+            </select>
+
+            <div id="micSection">
+                <label for="micSelect">Select Microphone:</label>
+                <select id="micSelect"></select>
+            </div>
+
+            <button id="start" class="button">Start</button>
+            <button id="stop" class="button" disabled>Stop</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

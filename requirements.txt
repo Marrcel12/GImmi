@@ -1,0 +1,26 @@
+# Flask web framework
+Flask==2.3.3
+
+# Flask-SocketIO for real-time communication
+Flask-SocketIO==5.3.6
+
+# PyAudio for audio streaming
+PyAudio==0.2.13
+
+# OpenAI API client for ChatGPT integration
+openai==0.27.8
+
+# Requests for making HTTP requests (used by some APIs)
+requests==2.31.0
+
+# SpeechRecognition library for basic audio transcription
+SpeechRecognition==3.8.1
+
+# Optional: python-dotenv for managing environment variables (e.g., API keys)
+python-dotenv==1.0.0
+
+# Optional: Flask-CORS for handling Cross-Origin Resource Sharing (CORS)
+Flask-CORS==4.0.0
+
+# Optional: Werkzeug for handling secure password hashing (if needed)
+Werkzeug==2.3.7
